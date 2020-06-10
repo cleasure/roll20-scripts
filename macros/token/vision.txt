@@ -1,0 +1,39 @@
+!token-mod {{
+	?{Vision Type - Dim/Bright|
+		None, 
+			--set 
+				light_radius&#124;
+				light_dimradius&#124;
+				light_multiplier&#124;1
+			--off light_otherplayers |
+		Torch - 40/20,
+			--set
+				light_radius&#124;40
+				light_dimradius&#124;20
+				light_multiplier&#124;1
+			--on light_otherplayers |
+		Hooded Lantern (Lowered) - 5/-5,
+			--set
+				light_radius&#124;5
+				light_dimradius#=-5
+				light_multiplier&#124;1
+			--on light_otherplayers |
+		Hooded Lantern (Open) - 60/30,
+			--set
+				light_radius&#124;60
+				light_dimradius&#124;30
+				light_multiplier&#124;1
+			--on light_otherplayers |			
+		Dark Vision 60/-5, 
+			--set 
+				light_radius&#124;30 
+				light_dimradius#=-5
+				light_multiplier&#124;2
+			--off light_otherplayers |
+		Devil Sight 120/0, 
+			--set 
+				light_radius&#124;120 
+				light_multiplier&#124;1
+			--off light_otherplayers
+	}
+}}
